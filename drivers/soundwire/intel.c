@@ -571,8 +571,6 @@ static int intel_link_power_down(struct sdw_intel *sdw)
 		}
 	}
 
-	link_control = intel_readl(shim, SDW_SHIM_LCTL);
-
 	mutex_unlock(sdw->link_res->shim_lock);
 
 	return ret;
